@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uganda Salary Calculator 2026/27 — PAYE, NSSF & Take-Home Pay</title>
+<meta name="description" content="Uganda salary calculator for FY2026/27. Estimate PAYE, NSSF and take-home pay, work backwards from a target net salary, and compare job offers.">
+<meta name="keywords" content="Uganda salary calculator, Uganda PAYE calculator 2026, PAYE calculator Uganda 2026/27, net salary calculator Uganda, gross to net Uganda, new PAYE rates Uganda">
+<link rel="canonical" href="https://takehomeuganda.com/">
+<meta property="og:title" content="Uganda Salary Calculator 2026/27 — TakeHome Uganda">
+<meta property="og:description" content="Calculate estimated Uganda take-home pay using FY2026/27 PAYE rules. Compare offers and work backwards from your desired net salary.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://takehomeuganda.com/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"TakeHome Uganda","url":"https://takehomeuganda.com/","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"UGX"},"description":"Uganda salary and PAYE calculator for estimating take-home pay, reverse salary requirements and job-offer comparisons."}</script>
+<style id="takehome-inline-style">
+:root{
+  --ink:#15352a;--muted:#61736a;--green:#087443;--green-dark:#055b35;--green-soft:#eaf6ef;
+  --gold:#e7b84b;--gold-soft:#fff7df;--bg:#f4f7f5;--surface:#fff;--line:#dce7e1;
+  --shadow:0 12px 32px rgba(16,55,38,.07);--radius:20px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}button,input{font:inherit}.wrap,.container{max-width:1080px;margin:auto;padding:0 22px}.topbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:15px 0;background:rgba(244,247,245,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.brand{font-weight:900;font-size:1.12rem;letter-spacing:-.02em;color:var(--green-dark)}.brand:before{content:"✓";display:inline-grid;place-items:center;width:27px;height:27px;margin-right:8px;border-radius:8px;background:var(--green);color:#fff;font-size:.82rem}.topnav{display:flex;gap:6px;flex-wrap:wrap}.topnav a{padding:8px 11px;border-radius:9px;color:var(--ink);font-weight:700;font-size:.9rem}.topnav a:hover{background:#e8f1ec;text-decoration:none}a{color:var(--green);font-weight:650}a:hover{text-decoration:underline}
+.hero{text-align:center;padding:58px 0 34px}.eyebrow,.badge{display:inline-flex;align-items:center;font-size:.74rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase;background:var(--green-soft);color:var(--green-dark);padding:7px 12px;border-radius:999px;border:1px solid #cfe8d9}.hero h1{font-size:clamp(2.2rem,5.5vw,4rem);line-height:1.02;letter-spacing:-.045em;margin:17px auto 14px;max-width:800px}.hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.04rem}.hero-points,.trust,.tax-strip,.grid,.info-grid,.compare-grid,.compare-cards{display:grid;gap:14px}.hero-points{grid-template-columns:repeat(3,1fr);max-width:760px;margin:25px auto 0}.hero-points span{padding:12px 10px;border:1px solid var(--line);border-radius:14px;background:var(--surface);font-weight:800;box-shadow:0 5px 16px rgba(16,55,38,.035)}
+.tax-strip{grid-template-columns:repeat(5,1fr);margin:0 0 20px}.tax-chip{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center}.tax-chip strong,.tax-chip span{display:block}.tax-chip strong{font-size:.98rem}.tax-chip span{font-size:.76rem;color:var(--muted);margin-top:2px}.trust{grid-template-columns:repeat(3,1fr);margin-bottom:22px}.trust-item,.card,.info{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:25px;box-shadow:var(--shadow)}.trust-item{box-shadow:none;background:#fbfdfc}.trust-item strong,.trust-item span{display:block}.trust-item strong{font-size:.96rem}.trust-item span{color:var(--muted);font-size:.88rem;margin-top:4px}
+.card{margin:18px 0}.card h2{margin:0 0 7px;font-size:1.42rem;letter-spacing:-.02em}.card>p:first-of-type{color:var(--muted);margin-top:0}.card label{font-weight:800;font-size:.9rem;display:block;margin-top:14px}.input-wrap{display:flex;align-items:stretch;border:1.5px solid #cbd9d1;border-radius:13px;overflow:hidden;background:#fff;margin:7px 0 13px;transition:.15s}.input-wrap:focus-within{border-color:var(--green);box-shadow:0 0 0 4px rgba(8,116,67,.09)}.input-wrap span{display:flex;align-items:center;padding:12px 14px;background:#f0f5f2;border-right:1px solid #dbe6e0;font-weight:900;color:var(--green-dark)}.input-wrap input{width:100%;border:0;padding:12px 14px;font-size:1.02rem;font-weight:700;color:var(--ink);outline:0;background:#fff}.choices{display:grid;gap:8px;margin:8px 0 14px}.choices label,.check{display:block;padding:11px 13px;border:1px solid #e1e9e4;border-radius:12px;background:#fbfcfb;font-weight:650;cursor:pointer}.choices label:has(input:checked),.check:has(input:checked){border-color:#acd5bd;background:var(--green-soft)}.choices input,.check input{margin-right:8px;accent-color:var(--green)}.hint,.source-note,.note{font-size:.87rem;color:var(--muted)}
+.quick{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:13px 0 16px}.quick span{font-weight:850;font-size:.84rem;color:var(--muted)}.quick button,.secondary,.primary{border-radius:12px;padding:11px 16px;font-weight:850;cursor:pointer;transition:transform .12s,box-shadow .12s,background .12s}.quick button{border:1px solid #cbd9d1;background:#fff;color:var(--green-dark)}.quick button:hover,.secondary:hover{background:var(--green-soft);transform:translateY(-1px)}.primary{border:0;background:var(--green);color:#fff;box-shadow:0 7px 16px rgba(8,116,67,.18)}.primary:hover{background:var(--green-dark);transform:translateY(-1px)}.secondary{border:1px solid var(--green);background:#fff;color:var(--green-dark)}
+#calculator>.card:first-child{border-top:5px solid var(--green)}#calculator>.card:first-child h2:before{content:"01";display:inline-flex;align-items:center;justify-content:center;width:34px;height:25px;margin-right:9px;border-radius:8px;background:var(--green-soft);color:var(--green);font-size:.72rem;vertical-align:3px}.results,.primary-results{border:1px solid #b9dbc7;border-left:6px solid var(--green);background:linear-gradient(135deg,#fbfffc,#f2faf5);box-shadow:0 14px 34px rgba(8,116,67,.09)}.primary-results{margin-top:20px;padding:26px}.primary-results .result-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:4px}.primary-results .result-subtitle{margin:4px 0 13px;color:var(--muted);font-size:.88rem}.primary-results .result-badge{font-size:.7rem;font-weight:900;letter-spacing:.06em;padding:6px 9px;border:1px solid #c9e2d2;border-radius:999px;white-space:nowrap;background:#fff}.takehome-label{font-size:.72rem;font-weight:900;letter-spacing:.09em;color:var(--muted)}.takehome{font-size:clamp(2.05rem,5vw,3.15rem);line-height:1.08;font-weight:950;letter-spacing:-.035em;margin:4px 0 19px;color:var(--green-dark)}.grid{grid-template-columns:repeat(3,1fr)}.grid>div,.result,.stat{padding:14px;border:1px solid #dce8e1;border-radius:13px;background:rgba(255,255,255,.75)}.grid span{display:block;color:var(--muted);font-size:.79rem}.grid strong{display:block;margin-top:4px;font-size:.98rem}.details{margin-top:14px;padding:16px;background:#eef5f1;border-radius:13px;white-space:pre-line;color:#40564b}.card .primary{margin-top:4px}
+.old-new,.impact,.reverse,.compare{position:relative}.old-new:before,.impact:before,.reverse:before,.compare:before{position:absolute;top:22px;right:25px;font-size:.68rem;font-weight:900;letter-spacing:.08em;color:#7a8a82;background:#f1f5f2;padding:5px 8px;border-radius:999px}.old-new:before{content:"COMPARE"}.impact:before{content:"IMPACT"}.reverse:before{content:"TARGET NET"}.compare:before{content:"JOB OFFERS"}.compare-cards{grid-template-columns:repeat(2,1fr)}.offer-card{padding:20px;border:1px solid var(--line);border-radius:16px;background:#fbfdfc}.offer-card h3{margin-top:0}.comparison-result,.impact-result,.reverse-result{margin-top:17px}.winner{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-top:14px;padding:15px 17px;border-radius:14px;background:var(--gold-soft);border:1px solid #f0d98e}.winner strong{color:#755600}.salary-links{display:flex;gap:8px;flex-wrap:wrap}.salary-links a{padding:8px 11px;border-radius:9px;background:#f1f7f3;text-decoration:none}.salary-links a:hover{background:#e2f0e8}.info-grid{grid-template-columns:1fr 1fr}.footer{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.container{padding-top:28px;padding-bottom:55px}.container .card{margin-top:18px}.salary-hero{text-align:center}.salary-number{font-size:2.5rem;font-weight:950;margin:10px}.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stat strong{display:block;font-size:1.2rem;margin-top:5px}.primary:disabled{opacity:.6;cursor:not-allowed}.faq details{border-top:1px solid var(--line);padding:13px 0}.faq details:first-of-type{border-top:0}.faq summary{font-weight:850;cursor:pointer}.premium-offer{border:1px dashed #d2b44e;background:linear-gradient(135deg,#fffdf5,#fff9e7)}
+@media(max-width:850px){.tax-strip{grid-template-columns:repeat(2,1fr)}.tax-chip:last-child{grid-column:1/-1}.hero-points,.trust{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Drill 9.61 - Salary Negotiation Report */
+.negotiation-builder,.negotiation-report{border:1px solid #d8e5dd;background:#fff}.negotiation-builder{border-top:5px solid var(--gold)}
+.report-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}.report-form-grid input,.report-form-grid select{width:100%;padding:12px 13px;border:1.5px solid #cbd9d1;border-radius:12px;background:#fff;color:var(--ink);font:inherit}.report-form-grid small{font-weight:500;color:var(--muted)}
+.report-actions{display:flex;gap:10px;justify-content:flex-end;margin-bottom:15px}.report-header{padding:4px 0 18px;border-bottom:1px solid var(--line)}.report-kicker{font-size:.75rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}.report-header h2{font-size:2rem;margin:7px 0}.report-meta{color:var(--muted);font-size:.9rem}.report-highlight{margin:18px 0;padding:17px;border-radius:14px;background:var(--gold-soft);border:1px solid #ecd68d}.report-section{padding:18px 0;border-top:1px solid var(--line)}.report-section:first-of-type{border-top:0}.report-section h3{margin:0 0 12px;font-size:1.1rem}.report-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.report-stat{padding:13px;border:1px solid #dce8e1;border-radius:12px;background:#fbfdfc}.report-stat span{display:block;color:var(--muted);font-size:.78rem}.report-stat strong{display:block;margin-top:3px}.report-table{width:100%;border-collapse:collapse;font-size:.88rem}.report-table th,.report-table td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left}.report-table th{background:#f1f7f3;color:var(--green-dark)}.negotiation-script{padding:16px;border-left:4px solid var(--green);background:#f3f8f5;border-radius:10px;white-space:pre-wrap}.report-footnote{padding-top:15px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted)}
+@media(max-width:700px){.report-form-grid,.report-summary{grid-template-columns:1fr}.report-actions{flex-direction:column}.report-table{font-size:.78rem}.report-table th,.report-table td{padding:8px 5px}}
+
+/* Drill 9.64 + 9.65 — professional, mobile-first negotiation report presentation */
+.report-cover{padding:22px 0 20px;border-bottom:1px solid var(--line)}
+.report-cover-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;align-items:stretch}
+.report-cover-main{padding:22px;border:1px solid #dce8e1;border-radius:18px;background:linear-gradient(135deg,#fbfffc,#f3f9f5)}
+.report-cover-main h2{font-size:clamp(1.8rem,4vw,2.45rem);line-height:1.1;margin:6px 0 10px;letter-spacing:-.035em}
+.report-cover-main p{margin:0;color:var(--muted)}
+.report-cover-side{padding:20px;border:1px solid #ecd68d;border-radius:18px;background:var(--gold-soft);display:flex;flex-direction:column;justify-content:center}
+.report-target-label{font-size:.72rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#7a6a3b}
+.report-target-value{font-size:clamp(1.55rem,4vw,2.15rem);font-weight:950;line-height:1.1;color:var(--green-dark);margin:5px 0}
+.report-target-note{font-size:.8rem;color:#74684a}
+.report-identity{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.report-pill{display:inline-flex;align-items:center;gap:5px;padding:7px 10px;border:1px solid #d7e5dc;border-radius:999px;background:#fff;font-size:.8rem;color:var(--ink)}
+.report-section{padding:24px 0}
+.report-section h3{font-size:1.22rem;letter-spacing:-.015em}
+.report-section-intro{color:var(--muted);margin-top:-3px}
+.report-stat strong{font-size:1rem;line-height:1.45}
+.report-stat .report-stat-value{font-size:1.1rem}
+.report-case-intro{padding:15px 17px;margin:14px 0;border-radius:14px;background:#f5f9f6;border-left:4px solid var(--green)}
+.report-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:15px}
+.report-case-card{padding:17px;border:1px solid #dce8e1;border-radius:16px;background:#fff}
+.report-case-card.full{grid-column:1/-1}
+.report-card-label{font-size:.72rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.report-card-list{display:grid;gap:9px;margin:0;padding:0;list-style:none}
+.report-card-list li{position:relative;padding-left:21px;line-height:1.5}
+.report-card-list li:before{content:"✓";position:absolute;left:0;top:0;font-weight:950;color:var(--green)}
+.report-value-box{background:var(--green-soft);border-color:#cde5d6}
+.report-value-box strong{color:var(--green-dark)}
+.report-strength{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:15px}
+.report-strength-item{padding:12px;border:1px solid #dce8e1;border-radius:13px;background:#fbfdfc}
+.report-strength-item span{display:block;font-size:.74rem;color:var(--muted)}
+.report-strength-item strong{display:block;margin-top:3px;font-size:.9rem}
+.report-strategy{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+.report-strategy-item{padding:16px;border:1px solid #dce8e1;border-radius:15px;background:#fbfdfc}
+.report-strategy-number{display:inline-grid;place-items:center;width:27px;height:27px;border-radius:8px;background:var(--green-soft);color:var(--green);font-weight:950;font-size:.8rem;margin-bottom:9px}
+.report-strategy-item h4{margin:0 0 4px;font-size:.96rem}
+.report-strategy-item p{margin:0;color:var(--muted);font-size:.9rem}
+.negotiation-script{padding:18px;border-left:4px solid var(--green);background:#f3f8f5;border-radius:12px;font-size:.98rem;line-height:1.7}
+.report-script-note{margin-top:9px;color:var(--muted);font-size:.8rem}
+.report-budget-grid{display:grid;gap:10px;margin:14px 0}
+.report-budget-item{padding:14px 15px;border:1px solid #dce8e1;border-radius:13px;background:#fbfdfc}
+.report-budget-item strong{display:block;margin-bottom:3px}
+.report-pocket{padding:18px;border:1px solid #cde5d6;border-radius:16px;background:linear-gradient(135deg,#f3faf6,#fff)}
+.report-pocket-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:13px}
+.report-pocket-stat{padding:13px;border-radius:12px;background:#fff;border:1px solid #dce8e1}
+.report-pocket-stat span{display:block;color:var(--muted);font-size:.76rem}
+.report-pocket-stat strong{display:block;margin-top:3px;font-size:1rem}
+@media(max-width:760px){.report-cover-grid,.report-case-grid,.report-strategy{grid-template-columns:1fr}.report-case-card.full{grid-column:auto}.report-strength{grid-template-columns:1fr 1fr}.report-pocket-grid{grid-template-columns:1fr}.report-cover-main,.report-cover-side{padding:17px}}
+@media(max-width:430px){.report-strength{grid-template-columns:1fr}.report-cover-main h2{font-size:1.8rem}}
+@media(max-width:700px){.wrap,.container{padding-left:15px;padding-right:15px}.topbar{position:static;align-items:flex-start;gap:10px;flex-direction:column}.topnav{width:100%;overflow-x:auto;flex-wrap:nowrap}.topnav a{white-space:nowrap}.hero{padding:40px 0 28px}.hero h1{font-size:2.35rem}.card,.trust-item,.info{padding:20px;border-radius:17px}.compare-cards,.info-grid,.compare-grid,.grid,.stat-grid{grid-template-columns:1fr}.tax-strip{grid-template-columns:1fr 1fr}.tax-chip:last-child{grid-column:auto}.primary,.secondary{width:100%}.quick button{flex:1 0 auto}.winner{flex-direction:column;align-items:flex-start}.primary-results .result-heading{flex-direction:column}.primary-results .result-badge{align-self:flex-start}.old-new:before,.impact:before,.reverse:before,.compare:before{position:static;display:inline-block;margin-bottom:9px}.takehome{font-size:2.25rem}}
+
+/* Drill 9.55 - calculator organization */
+.tool-selector{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0 18px;position:sticky;top:0;z-index:10;padding:10px 0;background:inherit}
+.tool-tab{appearance:none;border:1px solid var(--border,#dfe5df);background:#fff;border-radius:14px;padding:15px 16px;text-align:left;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:.18s ease}
+.tool-tab:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(0,0,0,.07)}
+.tool-tab.active{border-color:var(--primary,#1f7a4d);box-shadow:0 0 0 2px rgba(31,122,77,.12)}
+.tool-tab-title{display:block;font-weight:800;font-size:1rem;margin-bottom:4px}
+.tool-tab-text{display:block;font-size:.82rem;opacity:.72;line-height:1.35}
+.tool-panel{display:none;scroll-margin-top:90px}
+.tool-panel.active{display:block}
+.tool-group-heading{margin:8px 0 16px;padding:4px 2px 2px}
+.tool-group-heading h2{margin:4px 0 6px}
+.tool-group-heading p{margin:0;max-width:760px;opacity:.78}
+#tool-tax-impact .old-new{margin-bottom:18px}
+#tool-tax-impact .impact{margin-top:18px}
+#tool-reverse .reverse,#tool-compare .compare{margin-top:0}
+@media (max-width:760px){
+  .tool-selector{grid-template-columns:1fr 1fr;position:static}
+  .tool-tab{padding:13px}
+}
+@media (max-width:430px){
+  .tool-selector{grid-template-columns:1fr}
+}
+
+/* Drill 9.55B — true calculator navigation and hierarchy */
+.tool-selector{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 22px;padding:0;background:transparent;position:static}
+.tool-tab{min-height:92px;appearance:none;border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:17px 18px;text-align:left;cursor:pointer;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease}
+.tool-tab:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(16,55,38,.09)}
+.tool-tab.active{border:2px solid var(--green);background:var(--green-soft);box-shadow:0 8px 24px rgba(8,116,67,.12);transform:none}
+.tool-tab-title{display:block;font-weight:900;font-size:1.02rem;color:var(--green-dark);margin-bottom:5px}
+.tool-tab-text{display:block;font-size:.82rem;color:var(--muted);line-height:1.4}
+.tool-panel{display:none;scroll-margin-top:24px}
+.tool-panel.active{display:block;animation:toolFade .18s ease}
+@keyframes toolFade{from{opacity:.35;transform:translateY(4px)}to{opacity:1;transform:none}}
+.tool-panel>.tool-group-heading{margin:0 0 14px;padding:4px 2px}
+.tool-panel>.tool-group-heading h2{font-size:1.65rem}
+.tool-panel>.card{margin:0 0 20px}
+#tool-tax-impact .old-new{margin-bottom:18px}
+#tool-tax-impact .impact{margin-top:18px}
+@media(max-width:850px){.tool-selector{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.tool-selector{grid-template-columns:1fr;margin-top:22px}.tool-tab{min-height:76px}.tool-panel>.tool-group-heading h2{font-size:1.4rem}}
+
+/* Drill 9.56 — visible calculator icons */
+.tool-tab{display:flex;align-items:flex-start;gap:13px}
+.tool-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:12px;background:var(--green-soft);font-size:1.35rem;line-height:1}
+.tool-tab.active .tool-icon{background:#fff}
+.tool-tab-copy{min-width:0;display:block}
+@media(max-width:700px){.tool-icon{flex-basis:38px;width:38px;height:38px;font-size:1.2rem}}
+
+
+.salary-shortcut{border:0;cursor:pointer;padding:8px 11px;border-radius:9px;background:#f1f7f3;color:var(--green);font:inherit;font-weight:700}
+.report-situation{grid-column:1/-1;padding:14px 15px;border:1px solid #dce8e1;border-radius:14px;background:#fbfdfc}.report-situation label{font-weight:850}.report-situation select{margin-top:8px;width:100%;padding:12px 13px;border:1.5px solid #cbd9d1;border-radius:12px;background:#fff;color:var(--ink);font:inherit}.report-form-full{grid-column:1/-1}.report-form-full textarea{width:100%;min-height:100px;resize:vertical;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;box-sizing:border-box}.report-form-full textarea:focus{outline:2px solid rgba(8,116,67,.15);border-color:var(--green)}
+.salary-shortcut:hover{background:#e2f0e8}
+</style>
+<script src="analytics.js" defer></script>
+<link rel="icon" href="favicon.svg"><link rel="manifest" href="site.webmanifest"><script src="payment-config.js"></script>
+
+<style id="drill-9-70-flutterwave-sandbox">
+.sandbox-payment-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.sandbox-payment-fields label{display:block;font-weight:800;font-size:.82rem;margin-bottom:6px}
+.sandbox-payment-fields input,.sandbox-payment-fields select{width:100%;padding:12px;border:1px solid #ccd9d1;border-radius:10px;background:#fff;font:inherit}
+.payment-error{margin:12px 0;padding:11px 13px;border-radius:10px;background:#fff0f0;border:1px solid #f0caca;color:#9b2020;font-size:.88rem}
+.payment-success{margin:12px 0;padding:12px 14px;border-radius:10px;background:#eef9f1;border:1px solid #cce5d2;color:#176a37;font-weight:800}
+.sandbox-redirect{display:block;text-align:center;text-decoration:none;margin:16px 0;max-width:360px}
+@media(max-width:700px){.sandbox-payment-fields{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main class="wrap">
+<div class="topbar"><div class="brand">TakeHome Uganda</div><nav class="topnav"><a href="#calculator">Calculator</a><a href="#tax-impact">Tax impact</a><a href="#reverse">Reverse salary</a><a href="#compare">Compare offers</a><a href="#faq">FAQ</a></nav></div>
+<header class="hero"><div class="eyebrow">🇺🇬 New FY2026/27 PAYE rates</div><h1>Know what actually reaches your pocket.</h1>
+<p>Calculate your Uganda take-home salary, PAYE and NSSF in seconds—then compare job offers or work backwards from the net salary you want.</p>
+<div class="hero-points"><span>Free to use</span><span>No sign-up</span><span>Privacy-first calculations</span></div></header>
+<div class="tax-strip" aria-label="FY2026/27 resident PAYE bands">
+<div class="tax-chip"><strong>0–335K</strong><span>0% PAYE</span></div><div class="tax-chip"><strong>335–410K</strong><span>20% marginal</span></div><div class="tax-chip"><strong>410–485K</strong><span>25% marginal</span></div><div class="tax-chip"><strong>485K–10M</strong><span>30% marginal</span></div><div class="tax-chip"><strong>10M+</strong><span>40% marginal</span></div>
+</div>
+<div class="trust"><div class="trust-item"><strong>Built for Uganda</strong><span>Figures are shown in UGX and designed around Ugandan payroll questions.</span></div><div class="trust-item"><strong>See the breakdown</strong><span>Don't just get a number—see PAYE, NSSF and estimated take-home.</span></div><div class="trust-item"><strong>Plan your salary</strong><span>Use reverse salary and offer comparison tools when negotiating.</span></div></div>
+<div class="tool-selector" aria-label="Salary calculator tools">
+  <button class="tool-tab active" data-tool="calculator" type="button"><span class="tool-icon" aria-hidden="true">🧮</span><span class="tool-tab-copy"><span class="tool-tab-title">Calculator</span><span class="tool-tab-text">Estimated take-home pay</span></span></button>
+  <button class="tool-tab" data-tool="tax-impact" type="button"><span class="tool-icon" aria-hidden="true">📊</span><span class="tool-tab-copy"><span class="tool-tab-title">Tax Impact</span><span class="tool-tab-text">Old vs new PAYE</span></span></button>
+  <button class="tool-tab" data-tool="reverse" type="button"><span class="tool-icon" aria-hidden="true">↩️</span><span class="tool-tab-copy"><span class="tool-tab-title">Reverse Salary</span><span class="tool-tab-text">Find required gross</span></span></button>
+  <button class="tool-tab" data-tool="compare" type="button"><span class="tool-icon" aria-hidden="true">⚖️</span><span class="tool-tab-copy"><span class="tool-tab-title">Compare Offers</span><span class="tool-tab-text">Compare two salaries</span></span></button>
+</div>
+
+<div class="tool-panel active" id="tool-calculator">
+<section id="calculator">
+<section class="card">
+<label for="salary">Gross monthly salary</label>
+<div class="input-wrap"><span>UGX</span><input id="salary" inputmode="numeric" value="2,000,000"></div>
+
+<label>Tax schedule</label>
+<div class="choices tax-mode">
+<label><input type="radio" name="taxMode" value="fy2026_27" checked> FY2026/27 amendment schedule</label>
+<label><input type="radio" name="taxMode" value="publishedUra"> URA published online schedule</label>
+</div>
+<p id="taxModeNotice" class="hint"><strong>FY2026/27 mode:</strong> Uses the PAYE bands published in URA's FY2026/27 tax-amendment material. URA's ordinary online PAYE page still displays the legacy bands, so we show both schedules transparently.</p>
+
+<label>Tax status</label>
+<div class="choices">
+<label><input type="radio" name="status" value="resident" checked> Resident</label>
+<label><input type="radio" name="status" value="nonresident"> Non-resident</label>
+</div>
+
+<label for="taxableIncome">Other taxable employment income <small>(optional)</small></label>
+<div class="input-wrap"><span>UGX</span><input id="taxableIncome" inputmode="numeric" value="0"></div>
+<p class="hint">Examples can include taxable allowances, bonuses or commissions. Actual treatment depends on the circumstances.</p>
+
+<label>NSSF treatment</label>
+<div class="choices">
+<label><input type="radio" name="nssfMode" value="standard" checked> Standard NSSF (5% employee + 10% employer)</label>
+<label><input type="radio" name="nssfMode" value="nonresident"> Non-resident employee (special contribution)</label>
+<label><input type="radio" name="nssfMode" value="none"> No employee NSSF deduction</label>
+<label><input type="radio" name="nssfMode" value="unsure"> Not sure / need to confirm</label>
+</div>
+<p class="hint">Do not infer NSSF exemption from age alone. NSSF eligibility depends on the applicable rules and employment circumstances. If you are unsure, confirm with your employer or NSSF.</p>
+
+<label class="check"><input id="multipleEmployers" type="checkbox"> I have more than one employer</label>
+<p class="hint">For current 2026/27 treatment, secondary employment is taxed at a flat 40% PAYE rate. This setting applies the 40% rate to the taxable employment income entered above.</p>
+
+<div class="quick"><span>Quick examples:</span>
+<button data-value="266471">266,471</button><button data-value="500000">500K</button><button data-value="1000000">1M</button>
+<button data-value="2000000">2M</button><button data-value="5000000">5M</button><button data-value="10000000">10M</button>
+</div><div class="quick"><span>Boundary tests:</span>
+<button data-value="235000">235K</button><button data-value="335000">335K</button><button data-value="410000">410K</button><button data-value="485000">485K</button><button data-value="10000001">10,000,001</button>
+</div><button id="calculate" class="primary">Calculate Take-Home Pay</button>
+</section>
+
+
+<section class="card results primary-results" aria-live="polite">
+<div class="result-heading"><div><div class="takehome-label">YOUR ESTIMATED TAKE-HOME PAY</div><p class="result-subtitle">Your calculation appears here after you enter your gross salary.</p></div><span class="result-badge">CALCULATED</span></div><div id="takehome" class="takehome">UGX 0</div>
+<div class="grid">
+<div><span>Total taxable employment income</span><strong id="gross">UGX 0</strong></div>
+<div><span>PAYE</span><strong id="paye">UGX 0</strong></div>
+<div><span>Employee NSSF</span><strong id="employeeNssf">UGX 0</strong></div>
+<div><span>NSSF status</span><strong id="nssfStatus">Standard</strong></div>
+<div><span>Employer NSSF</span><strong id="employerNssf">UGX 0</strong></div>
+<div><span>Annual take-home</span><strong id="annualTakehome">UGX 0</strong></div>
+</div>
+<button id="detailsBtn" class="secondary">Show calculation</button>
+<div id="details" class="details" hidden></div>
+</section>
+
+
+</section>
+</div>
+
+<div class="tool-panel" id="tool-tax-impact">
+<section id="tax-impact" class="tool-group-heading">
+  <div class="eyebrow">TAX IMPACT</div><h2>Understand how PAYE changes affect your salary</h2><p>Compare the previous PAYE structure with the FY2026/27 amendment schedule and see the estimated difference.</p>
+</section>
+<section class="card old-new">
+<h2>Old vs New PAYE</h2>
+<p>See how the FY2026/27 resident PAYE structure can change your monthly tax and take-home pay.</p>
+<label for="oldNewSalary">Monthly salary to compare</label>
+<div class="input-wrap"><span>UGX</span><input id="oldNewSalary" inputmode="numeric" value="2,000,000"></div>
+<p class="hint"><strong>Resident comparison:</strong> this tool compares the URA-published online resident schedule with the FY2026/27 amendment schedule.</p>
+<label>NSSF treatment</label>
+<div class="choices"><label><input type="radio" name="oldNewNssf" value="standard" checked> Standard 5% employee NSSF</label><label><input type="radio" name="oldNewNssf" value="none"> No employee NSSF</label></div>
+<button id="oldNewCalculate" class="primary">Compare Old vs New</button>
+<div class="compare-cards old-new-results">
+<div class="offer-card"><h3>Previous PAYE structure</h3><p>PAYE: <strong id="oldNewOldPaye">UGX 0</strong></p><p>Estimated take-home: <strong id="oldNewOldNet">UGX 0</strong></p></div>
+<div class="offer-card"><h3>FY2026/27 PAYE structure</h3><p>PAYE: <strong id="oldNewNewPaye">UGX 0</strong></p><p>Estimated take-home: <strong id="oldNewNewNet">UGX 0</strong></p></div>
+</div>
+<p id="oldNewDifference" class="winner-text"></p>
+<p class="hint">The comparison uses the configured resident bands. Non-resident PAYE follows a separate schedule and is not an old-vs-new resident comparison.</p>
+</section>
+
+
+<section class="card impact" id="impact">
+<h2>Tax Change Impact</h2>
+<p>Enter a monthly salary to see the estimated PAYE difference between the URA schedule currently displayed online and the FY2026/27 amendment schedule.</p>
+<label for="impactSalary">Monthly gross salary</label>
+<div class="input-wrap"><span>UGX</span><input id="impactSalary" inputmode="numeric" value="2,000,000"></div>
+<button id="impactCalculate" class="primary">See My Tax Impact</button>
+<div class="impact-result" aria-live="polite">
+<div class="takehome-label">ESTIMATED MONTHLY PAYE DIFFERENCE</div><div id="impactMonthly" class="takehome">UGX 0</div>
+<div class="grid">
+<div><span>URA online PAYE</span><strong id="impactOldPaye">UGX 0</strong></div>
+<div><span>FY2026/27 PAYE</span><strong id="impactNewPaye">UGX 0</strong></div>
+<div><span>Annual difference</span><strong id="impactAnnual">UGX 0</strong></div>
+<div><span>Estimated take-home change</span><strong id="impactNet">UGX 0/month</strong></div>
+</div>
+<p id="impactMessage" class="winner-text"></p>
+</div>
+<p class="hint">Resident comparison only. NSSF is unchanged in this tax-impact view; LST and other individual payroll adjustments are excluded.</p>
+</section>
+
+
+</div>
+
+<div class="tool-panel" id="tool-reverse">
+<section id="reverse" class="tool-group-heading">
+  <div class="eyebrow">REVERSE SALARY</div><h2>Start with the take-home you want</h2><p>Work backwards to estimate the gross salary you may need to negotiate.</p>
+</section>
+<section class="card reverse">
+<h2>Reverse Salary Calculator</h2>
+<p>Want a specific amount to reach your pocket? Estimate the gross salary you may need to negotiate.</p>
+<label for="targetNet">Desired monthly take-home</label>
+<div class="input-wrap"><span>UGX</span><input id="targetNet" inputmode="numeric" value="2,000,000"></div>
+<button id="reverseCalculate" class="primary">Find Required Gross Salary</button>
+<div class="reverse-result" aria-live="polite">
+<div class="takehome-label">ESTIMATED GROSS SALARY REQUIRED</div><div id="requiredGross" class="takehome">UGX 0</div>
+<div class="grid">
+<div><span>Estimated PAYE</span><strong id="reversePaye">UGX 0</strong></div>
+<div><span>Employee NSSF</span><strong id="reverseNssf">UGX 0</strong></div>
+<div><span>Estimated take-home</span><strong id="reverseNet">UGX 0</strong></div>
+<div><span>Difference from target</span><strong id="reverseDiff">UGX 0</strong></div>
+</div>
+<p id="reverseNote" class="hint"></p>
+</div>
+</section>
+
+
+</div>
+
+<div class="tool-panel" id="tool-compare">
+<section class="tool-group-heading">
+  <div class="eyebrow">COMPARE OFFERS</div><h2>Compare what two salaries really give you</h2><p>Look beyond the advertised gross salary and compare estimated take-home pay.</p>
+</section>
+<section id="compare" class="card compare">
+<h2>Salary Offer Comparison</h2>
+<p>Compare two job offers by what actually reaches your pocket—not just the advertised gross salary.</p>
+<div class="compare-grid">
+  <div>
+    <h3>Job Offer A</h3>
+    <label for="offerA">Gross monthly salary</label>
+    <div class="input-wrap"><span>UGX</span><input id="offerA" inputmode="numeric" value="2,000,000"></div>
+    <label for="offerAOther">Other taxable income <small>(optional)</small></label>
+    <div class="input-wrap"><span>UGX</span><input id="offerAOther" inputmode="numeric" value="0"></div>
+  </div>
+  <div>
+    <h3>Job Offer B</h3>
+    <label for="offerB">Gross monthly salary</label>
+    <div class="input-wrap"><span>UGX</span><input id="offerB" inputmode="numeric" value="2,500,000"></div>
+    <label for="offerBOther">Other taxable income <small>(optional)</small></label>
+    <div class="input-wrap"><span>UGX</span><input id="offerBOther" inputmode="numeric" value="0"></div>
+  </div>
+</div>
+<button id="compareOffers" class="primary">Compare Offers</button>
+<div class="comparison-result" aria-live="polite">
+  <div class="compare-cards">
+    <div class="offer-card"><h3>Job Offer A</h3><div class="takehome-label">ESTIMATED MONTHLY TAKE-HOME</div><div id="offerANet" class="takehome">UGX 0</div><p>PAYE: <strong id="offerAPaye">UGX 0</strong></p><p>Employee NSSF: <strong id="offerANssf">UGX 0</strong></p><p>Annual take-home: <strong id="offerAAnnual">UGX 0</strong></p></div>
+    <div class="offer-card"><h3>Job Offer B</h3><div class="takehome-label">ESTIMATED MONTHLY TAKE-HOME</div><div id="offerBNet" class="takehome">UGX 0</div><p>PAYE: <strong id="offerBPaye">UGX 0</strong></p><p>Employee NSSF: <strong id="offerBNssf">UGX 0</strong></p><p>Annual take-home: <strong id="offerBAnnual">UGX 0</strong></p></div>
+  </div>
+  <div class="winner"><span id="offerWinner">Enter two offers to compare.</span><strong id="offerDifference">UGX 0/month</strong></div>
+  <p id="comparisonNote" class="hint"></p>
+</div>
+</section>
+
+</div>
+
+
+<section id="premiumOffer" class="card premium-offer" hidden>
+  <div class="eyebrow">SALARY NEGOTIATION REPORT</div>
+  <div class="premium-intro">
+    <div>
+      <h2>Turn your salary calculation into a personal negotiation plan</h2>
+      <p>Don't just know what your salary is worth after deductions. Build a clear case for the salary you want — tailored to your profession, responsibilities and situation.</p>
+    </div>
+    <div class="premium-price"><span>Planned price</span><strong>UGX 5,000</strong></div>
+  </div>
+  <div class="premium-value-grid">
+    <div class="premium-value-card"><strong>📊 Know your numbers</strong><span>See your current gross, PAYE, NSSF and estimated take-home.</span></div>
+    <div class="premium-value-card"><strong>🎯 Plan your target</strong><span>Compare 10%, 15%, 20% and 25% negotiation scenarios.</span></div>
+    <div class="premium-value-card"><strong>💼 Build your case</strong><span>Connect your profession, responsibilities and experience to your value.</span></div>
+    <div class="premium-value-card"><strong>🗣️ Know what to say</strong><span>Get a ready-to-use message matched to your negotiation situation.</span></div>
+  </div>
+  <div class="premium-situations">
+    <div class="report-card-label">Built for three common situations</div>
+    <div class="premium-situation-list"><span>New job salary</span><span>Current-job salary increase</span><span>Promotion / expanded responsibilities</span></div>
+  </div>
+  <div class="premium-flow"><div class="premium-flow-step active"><span>1</span><strong>Review</strong></div><div class="premium-flow-line"></div><div class="premium-flow-step"><span>2</span><strong>Payment</strong></div><div class="premium-flow-line"></div><div class="premium-flow-step"><span>3</span><strong>Report</strong></div></div>
+  <div class="premium-order-box"><div><strong>Your personalized Salary Negotiation Report</strong><span>Profession-specific · Situation-specific · Printable / PDF-ready</span></div><strong class="premium-order-price">UGX 5,000</strong></div>
+  <button id="premiumCta" class="primary" type="button">Continue to Payment</button>
+  <p class="hint premium-note"><strong>Sandbox testing:</strong> Flutterwave test mode only. No real payment is taken.</p>
+</section>
+
+
+<style id="drill-9-66-sales-presentation">
+.premium-intro{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;margin:10px 0 20px}.premium-intro h2{margin:0 0 8px}.premium-price{padding:16px 18px;border:1px solid #ecd68d;border-radius:16px;background:var(--gold-soft);text-align:center;min-width:150px}.premium-price span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:#7a6a3b}.premium-price strong{display:block;margin-top:4px;font-size:1.45rem;color:var(--green-dark)}.premium-value-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0}.premium-value-card{display:flex;flex-direction:column;gap:5px;padding:16px;border:1px solid #dce8e1;border-radius:15px;background:#fbfdfc}.premium-value-card strong{font-size:.98rem}.premium-value-card span{font-size:.86rem;color:var(--muted);line-height:1.45}.premium-situations{margin:18px 0;padding:15px 17px;border-radius:15px;background:#f5f9f6;border-left:4px solid var(--green)}.premium-situation-list{display:flex;flex-wrap:wrap;gap:8px}.premium-situation-list span{padding:7px 10px;border:1px solid #d7e5dc;border-radius:999px;background:#fff;font-size:.8rem}.premium-note{margin-top:10px}.premium-offer .primary{width:100%;max-width:360px}.premium-offer{border-top:5px solid var(--gold)}
+@media(max-width:700px){.premium-intro{grid-template-columns:1fr}.premium-price{max-width:none}.premium-value-grid{grid-template-columns:1fr}.premium-situation-list{display:grid;grid-template-columns:1fr}.premium-situation-list span{text-align:center}}
+</style>
+
+<section id="paymentStep" class="card payment-step" hidden>
+  <div class="eyebrow">STEP 2 · PAYMENT</div>
+  <h2>Complete your report order</h2>
+  <p>Enter the details needed for the Flutterwave Sandbox test. <strong>No real money will be charged.</strong></p>
+  <div class="payment-order"><div><strong>Salary Negotiation Report</strong><span>Personalized to your profession, responsibilities and negotiation situation.</span></div><strong class="payment-price">UGX 5,000</strong></div>
+  <div class="sandbox-payment-fields">
+    <div><label for="paymentEmail">Email address</label><input id="paymentEmail" type="email" placeholder="e.g. you@example.com" autocomplete="email"></div>
+    <div><label for="paymentPhone">Mobile Money phone number</label><input id="paymentPhone" type="tel" inputmode="tel" placeholder="e.g. 0772 123456" autocomplete="tel"></div>
+    <div><label for="paymentNetwork">Mobile Money network</label><select id="paymentNetwork"><option value="MTN">MTN Mobile Money</option><option value="AIRTEL">Airtel Money</option></select></div>
+  </div>
+  <ul class="payment-checklist"><li>Current salary and estimated take-home picture</li><li>10%, 15%, 20% and 25% negotiation scenarios</li><li>Profession-specific negotiation case</li><li>Situation-specific strategy and ready-to-use message</li><li>Practical responses if the employer cannot meet your target</li></ul>
+  <label class="payment-consent"><input id="paymentConsent" type="checkbox"><span>I understand this is a <strong>Flutterwave Sandbox test</strong> and no real payment will be taken.</span></label>
+  <p id="paymentFormError" class="payment-error" role="alert" hidden></p>
+  <div class="payment-actions"><button id="backToOffer" class="secondary" type="button">Back</button><button id="continuePayment" class="primary" type="button" disabled>Start Sandbox Payment</button></div>
+</section>
+
+<section id="testPayment" class="card test-payment" hidden>
+  <div class="eyebrow">STEP 2 · FLUTTERWAVE SANDBOX</div>
+  <h2>Complete your test payment</h2>
+  <div class="test-payment-box"><div class="test-payment-icon">✓</div><strong>UGX 5,000</strong><span>Sandbox only — no real money will be charged.</span></div>
+  <p id="sandboxStatus">Your test payment is being prepared. If Flutterwave provides a confirmation page, open it below and follow the test instructions.</p>
+  <a id="sandboxRedirect" class="primary sandbox-redirect" href="#" target="_blank" rel="noopener" hidden>Open Flutterwave Test Payment</a>
+  <p id="sandboxWaiting" class="hint" hidden>Waiting for Flutterwave to confirm the payment…</p>
+  <p id="sandboxSuccess" class="payment-success" hidden>✓ Payment verified. Your report is now unlocked.</p>
+  <p id="sandboxError" class="payment-error" hidden></p>
+  <div class="payment-actions"><button id="backToPayment" class="secondary" type="button">Back</button><button id="unlockAfterCheck" class="primary" type="button" hidden>Continue to Report</button></div>
+</section>
+
+<section id="negotiationBuilder" class="card negotiation-builder" hidden>
+  <div class="eyebrow">REPORT BUILDER</div>
+  <h2>Your Salary Negotiation Report</h2>
+  <p>Give us a little context and the report will tailor the negotiation case to your profession, experience and negotiation situation.</p>
+  <div class="report-form-grid">
+    <div class="report-situation"><label for="reportSituation">What are you negotiating? <small>(important)</small></label><select id="reportSituation"><option value="new_job">A salary for a new job</option><option value="current_raise">A salary increase in my current job</option><option value="promotion">A promotion or expanded responsibilities</option></select><small>Choose the situation that best matches your salary discussion.</small></div>
+    <div><label for="reportName">Your name <small>(optional)</small></label><input id="reportName" type="text" placeholder="e.g. Ronald" autocomplete="name"></div>
+    <div><label for="reportJob">Job title <small>(recommended)</small></label><input id="reportJob" type="text" placeholder="e.g. Accountant"></div>
+    <div><label for="reportCategory">Profession / field <small>(recommended)</small></label><select id="reportCategory"><option value="general">Other / General Professional</option><option>Accounting & Finance</option><option>Administration / HR</option><option>Sales & Marketing</option><option>IT / Technology</option><option>Engineering</option><option>Education</option><option>Healthcare</option><option>NGO / Development</option><option>Operations / Logistics</option><option>Customer Service</option><option>Security</option><option>Driving / Transport</option><option>Legal</option><option>Construction / Skilled Trades</option></select></div>
+    <div><label for="reportEmployer">Employer / company <small>(optional)</small></label><input id="reportEmployer" type="text" placeholder="e.g. ABC Ltd"></div>
+    <div class="report-form-full"><label for="reportResponsibilities">Main responsibilities <small>(3–5 is ideal)</small></label><textarea id="reportResponsibilities" rows="4" placeholder="e.g. Prepare financial reports; reconcile bank accounts; handle tax returns; maintain accurate records."></textarea></div>
+    <div class="report-form-full"><label for="reportEvidence">Experience, achievement or skill that strengthens your case <small>(optional)</small></label><textarea id="reportEvidence" rows="4" placeholder="e.g. 3 years of relevant experience, improved reporting accuracy, managed deadlines, trained staff, increased sales, or another result you can explain."></textarea></div>
+    <div><label for="reportUplift">Negotiation target scenario</label><select id="reportUplift"><option value="0.10">10% increase — cautious</option><option value="0.15" selected>15% increase — balanced</option><option value="0.20">20% increase — strong</option><option value="0.25">25% increase — ambitious</option></select></div>
+  </div>
+  <button id="generateReport" class="primary" type="button">Generate Report</button>
+  <p class="hint">The percentage scenarios are negotiation-planning examples, not a claim about the market value of a job.</p>
+</section>
+
+<section id="negotiationReport" class="card negotiation-report" hidden aria-live="polite">
+  <div class="report-actions"><button id="printReport" class="secondary" type="button">Print / Save as PDF</button><button id="editReport" class="secondary" type="button">Edit Details</button></div>
+  <div id="reportContent"></div>
+</section>
+
+<section class="card"><h2>Popular Uganda salary searches</h2><p><a href="new-paye-rates-uganda-2026-27.html">New Uganda PAYE rates 2026/27</a> · <a href="net-salary-calculator-uganda.html">Uganda net salary calculator</a></p><div class="salary-links" role="list" aria-label="Popular salary shortcuts">
+<button type="button" class="salary-shortcut" data-salary="250000">UGX 250K</button>
+<button type="button" class="salary-shortcut" data-salary="500000">UGX 500K</button>
+<button type="button" class="salary-shortcut" data-salary="1000000">UGX 1M</button>
+<button type="button" class="salary-shortcut" data-salary="2000000">UGX 2M</button>
+<button type="button" class="salary-shortcut" data-salary="3000000">UGX 3M</button>
+<button type="button" class="salary-shortcut" data-salary="5000000">UGX 5M</button>
+<button type="button" class="salary-shortcut" data-salary="10000000">UGX 10M</button>
+<button type="button" class="salary-shortcut" data-salary="20000000">UGX 20M</button>
+</div><p>Tap a salary below to open the calculator with that amount already entered. You can then adjust the salary or assumptions.</p></section>
+<section class="info-grid">
+<section class="card"><h2>Why use TakeHome Uganda?</h2><p>Job adverts usually show gross salary. What matters to your budget is the amount left after statutory deductions. TakeHome Uganda helps you understand that gap before accepting an offer.</p><ul><li>Gross → net salary estimate</li><li>Net → gross salary negotiation tool</li><li>Job offer comparison</li><li>Flexible NSSF treatment</li><li>FY2026/27 PAYE-focused calculations</li></ul></section>
+<section id="faq" class="card faq"><h2>Frequently asked questions</h2>
+<details open><summary>Is this an official URA calculator?</summary><p>No. TakeHome Uganda is an independent planning tool. For payroll filing and compliance, confirm the applicable treatment with URA, your employer or a qualified adviser.</p></details>
+<details><summary>Does NSSF reduce PAYE?</summary><p>The calculator treats employee NSSF as a separate deduction from gross pay rather than reducing the PAYE base, consistent with the model used here.</p></details>
+<details><summary>Does the calculator include LST?</summary><p>Not in the displayed take-home yet. LST has timing and PAYE-interaction considerations, so we are keeping it separate until a month-specific model is implemented.</p></details>
+<details><summary>Are my salary details stored?</summary><p>The calculator is designed to perform calculations in your browser without requiring an account. Do not enter information you would not want stored on any website.</p></details>
+</section></section>
+<section class="info">
+<h2>Important</h2>
+<p>This is an independent estimate using the configured FY2026/27 PAYE rules and NSSF assumptions. It is not an official URA or NSSF calculator. URA publishes FY2026/27 tax-amendment material, while its ordinary PAYE rates page currently displays the legacy resident bands. TakeHome Uganda exposes both schedules so users can see which basis is being used.</p>
+<p>PAYE is calculated before standard employee NSSF. NSSF treatment depends on eligibility; non-resident employees generally attract a special employer contribution rather than the standard employee 5% deduction. Local Service Tax (LST) is a local-government tax. Current guidance says it is payable by eligible employees earning above UGX 100,000, with annual bands up to UGX 100,000 and collection from employees in four instalments between July and October. LST is also deductible before PAYE, so simply subtracting an average monthly LST amount would not accurately reproduce payroll-month PAYE. We therefore do not include LST in the displayed take-home until we implement a month-specific LST/PAYE model. Exemptions and other special deductions are also not included.</p>
+<p class="source-note">Tax-source note: URA's FY2026/27 amendment material and its ordinary online PAYE page currently show different resident schedules. This calculator makes that distinction visible rather than hiding it. Check the latest official URA guidance before relying on a result for payroll.</p><div class="footer">TakeHome Uganda · Salary planning tools for Uganda · <a href="about.html">About</a> · <a href="methodology.html">How we calculate</a> · <a href="privacy.html">Privacy</a> · <a href="https://ura.go.ug/en/tax-calculators/" target="_blank" rel="noopener">Official URA tax calculators</a></div></section></main>
+<script id="takehome-inline-tax">
+window.TakeHomeTax={
+  fy2026_27:{bands:[{to:335000,rate:0},{to:410000,rate:.20},{to:485000,rate:.25},{to:10000000,rate:.30},{to:Infinity,rate:.40}]},
+  publishedUra:{bands:[{to:235000,rate:0},{to:335000,rate:.10},{to:410000,rate:.20},{to:10000000,rate:.30},{to:Infinity,rate:.40}]},
+  paye(monthly,mode,status,multiple){
+    monthly=Math.max(0,Number(monthly)||0);
+    if(multiple) return monthly*.40;
+    if(status==='nonresident') return monthly*.30;
+    const bands=this[mode||'fy2026_27'].bands; let prev=0,tax=0;
+    for(const b of bands){const taxable=Math.max(0,Math.min(monthly,b.to)-prev);tax+=taxable*b.rate;if(monthly<=b.to)break;prev=b.to;} return tax;
+  },
+  nssf(gross,mode){
+    gross=Math.max(0,Number(gross)||0);
+    if(mode==='standard') return gross*.05;
+    if(mode==='nonresident'||mode==='none') return 0;
+    return 0;
+  }
+};
+
+</script><script id="takehome-inline-calculator">
+(function(){
+const T=window.TakeHomeTax;
+const $=id=>document.getElementById(id);
+const money=n=>'UGX '+Math.round(n||0).toLocaleString('en-UG');
+const num=id=>Number(String($(id)?.value||0).replace(/,/g,''))||0;
+const radio=name=>document.querySelector('input[name="'+name+'"]:checked')?.value;
+function set(id,v){if($(id))$(id).textContent=v}
+function result(gross,other,mode,status,nssfMode,multi){
+ const taxable=gross+other,paye=T.paye(taxable,mode,status,multi),en=T.nssf(gross,nssfMode),net=taxable-paye-en;
+ return {taxable,paye,en,employer:nssfMode==='standard'?gross*.10:0,net};
+}
+function calculate(){
+ const gross=num('salary'),other=num('taxableIncome'),mode=radio('taxMode')||'fy2026_27',status=radio('status')||'resident',nm=radio('nssfMode')||'standard',multi=$('multipleEmployers')?.checked;
+ const r=result(gross,other,mode,status,nm,multi);
+ set('takehome',money(r.net));set('gross',money(r.taxable));set('paye',money(r.paye));set('employeeNssf',money(r.en));set('employerNssf',money(r.employer));set('annualTakehome',money(r.net*12));set('nssfStatus',nm==='standard'?'Standard':nm==='nonresident'?'Non-resident special':nm==='none'?'No employee deduction':'Confirm eligibility');
+ if($('details')){$('details').textContent='Gross monthly salary: '+money(gross)+'\nOther taxable employment income: '+money(other)+'\nPAYE: '+money(r.paye)+'\nEmployee NSSF: '+money(r.en)+'\nEstimated take-home: '+money(r.net);}
+ if($('premiumOffer'))$('premiumOffer').hidden=false;
+}
+function oldNew(){const g=num('oldNewSalary'),nm=radio('oldNewNssf')||'standard',en=nm==='standard'?g*.05:0;const oldp=T.paye(g,'publishedUra','resident',false),newp=T.paye(g,'fy2026_27','resident',false);set('oldNewOldPaye',money(oldp));set('oldNewNewPaye',money(newp));set('oldNewOldNet',money(g-oldp-en));set('oldNewNewNet',money(g-newp-en));set('oldNewDifference',money(oldp-newp));}
+function impact(){const g=num('impactSalary'),oldp=T.paye(g,'publishedUra','resident',false),newp=T.paye(g,'fy2026_27','resident',false),d=oldp-newp;set('impactOldPaye',money(oldp));set('impactNewPaye',money(newp));set('impactMonthly',money(d));set('impactAnnual',money(d*12));set('impactNet',money(g-newp-g*.05));set('impactMessage',d>=0?'Estimated PAYE is lower under the FY2026/27 model by '+money(d)+' per month.':'Estimated PAYE is higher under the FY2026/27 model by '+money(-d)+' per month.');}
+function reverse(){const target=num('targetNet'),nm=radio('nssfMode')||'standard',mode=radio('taxMode')||'fy2026_27',status=radio('status')||'resident';let lo=0,hi=Math.max(target*3,1000000);for(let i=0;i<80;i++){let mid=(lo+hi)/2,r=result(mid,0,mode,status,nm,false);if(r.net<target)lo=mid;else hi=mid;}const g=hi,r=result(g,0,mode,status,nm,false);set('requiredGross',money(g));set('reverseNet',money(r.net));set('reversePaye',money(r.paye));set('reverseNssf',money(r.en));set('reverseDiff',money(r.net-target));if($('reverseNote'))$('reverseNote').textContent='Estimated gross salary needed to reach the target net under the selected assumptions.'}
+function offers(){const a=num('offerA'),ao=num('offerAOther'),b=num('offerB'),bo=num('offerBOther'),nm=radio('nssfMode')||'standard',mode=radio('taxMode')||'fy2026_27',status=radio('status')||'resident';const A=result(a,ao,mode,status,nm,false),B=result(b,bo,mode,status,nm,false);[['offerAPaye',A.paye],['offerANssf',A.en],['offerANet',A.net],['offerAAnnual',A.net*12],['offerBPaye',B.paye],['offerBNssf',B.en],['offerBNet',B.net],['offerBAnnual',B.net*12]].forEach(x=>set(x[0],money(x[1])));const d=A.net-B.net;set('offerDifference',money(Math.abs(d)));set('offerWinner',d>0?'Offer A gives the higher estimated take-home.':d<0?'Offer B gives the higher estimated take-home.':'Both offers have the same estimated take-home.');if($('comparisonNote'))$('comparisonNote').textContent='Comparison uses the same tax and NSSF assumptions for both offers.'}
+function fmtInputs(){document.querySelectorAll('input[inputmode="numeric"]').forEach(i=>{i.addEventListener('focus',()=>i.value=i.value.replace(/,/g,''));i.addEventListener('blur',()=>{const n=Number(i.value.replace(/,/g,''));if(Number.isFinite(n))i.value=n.toLocaleString('en-UG')})})}
+function applySalaryFromUrl(){
+ const params=new URLSearchParams(window.location.search);
+ const salary=Number(params.get('salary'));
+ if(Number.isFinite(salary) && salary>0 && $('salary')){
+   $('salary').value=salary.toLocaleString('en-UG');
+   calculate();
+   const panel=document.getElementById('tool-calculator');
+   if(panel) panel.scrollIntoView({behavior:'smooth',block:'start'});
+   return true;
+ }
+ return false;
+}
+function setupToolNavigation(){
+ const tabs=[...document.querySelectorAll('.tool-tab')];
+ const panels=[...document.querySelectorAll('.tool-panel')];
+ function showTool(name){
+   tabs.forEach(t=>{const active=t.dataset.tool===name;t.classList.toggle('active',active);t.setAttribute('aria-selected',active?'true':'false');});
+   panels.forEach(p=>p.classList.toggle('active',p.id==='tool-'+name));
+   const activePanel=document.getElementById('tool-'+name);
+   if(activePanel) activePanel.scrollIntoView({behavior:'smooth',block:'start'});
+ }
+ tabs.forEach(t=>t.addEventListener('click',()=>showTool(t.dataset.tool)));
+ showTool('calculator');
+}
+function escReport(v){return String(v||'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function reportDate(){return new Date().toLocaleDateString('en-UG',{day:'numeric',month:'long',year:'numeric'});}
+function generateNegotiationReport(){
+ const gross=num('salary'),other=num('taxableIncome'),mode=radio('taxMode')||'fy2026_27',status=radio('status')||'resident',nm=radio('nssfMode')||'standard',multi=$('multipleEmployers')?.checked;
+ const current=result(gross,other,mode,status,nm,multi),base=current.taxable,uplift=Number($('reportUplift')?.value||.15);
+ if(base<=0){alert('Enter a salary first, then calculate it before creating the report.');return;}
+ const name=escReport($('reportName')?.value||'Salary professional'),job=escReport($('reportJob')?.value||'Professional'),employer=escReport($('reportEmployer')?.value||'Not specified');
+ const situation=$('reportSituation')?.value||'new_job';
+ const situationLabels={new_job:'New job salary negotiation',current_raise:'Current-job salary review',promotion:'Promotion / expanded responsibilities'};
+ const situationLabel=situationLabels[situation]||situationLabels.new_job;
+ const category=escReport($('reportCategory')?.value||'Other / General Professional');
+ const responsibilitiesRaw=String($('reportResponsibilities')?.value||'').trim();
+ const evidenceRaw=String($('reportEvidence')?.value||'').trim();
+ const responsibilities=escReport(responsibilitiesRaw||'Use the key responsibilities of the role as the starting point for your discussion.');
+ const evidence=escReport(evidenceRaw||'Use your relevant experience, skills, qualifications or measurable results as evidence of the value you can bring.');
+ const profiles={
+  'Accounting & Finance':{value:'accuracy, financial reporting, controls, reconciliations and compliance',lead:'financial accuracy and reliable reporting'},
+  'Administration / HR':{value:'organisation, people support, records, coordination and timely execution',lead:'efficient administration and dependable support'},
+  'Sales & Marketing':{value:'revenue growth, customer relationships, lead generation and market activity',lead:'commercial results and customer growth'},
+  'IT / Technology':{value:'systems reliability, technical problem-solving, security, automation and delivery',lead:'technical capability and dependable delivery'},
+  'Engineering':{value:'technical quality, safety, problem-solving, project delivery and efficiency',lead:'technical judgement and safe, efficient delivery'},
+  'Education':{value:'teaching quality, learner support, planning, assessment and educational outcomes',lead:'learning outcomes and dependable teaching'},
+  'Healthcare':{value:'patient/client care, safety, accurate records, teamwork and professional standards',lead:'safe, reliable and professional care'},
+  'NGO / Development':{value:'programme delivery, reporting, stakeholder coordination, accountability and community impact',lead:'programme results and accountable delivery'},
+  'Operations / Logistics':{value:'planning, coordination, cost control, efficiency, inventory and reliable delivery',lead:'operational efficiency and dependable execution'},
+  'Customer Service':{value:'customer experience, communication, problem-solving and service quality',lead:'customer satisfaction and service reliability'},
+  'Security':{value:'safety, vigilance, incident response, procedures and dependable coverage',lead:'security, vigilance and reliable execution'},
+  'Driving / Transport':{value:'safe driving, punctuality, vehicle care, route planning and dependable service',lead:'safe, punctual and dependable transport'},
+  'Legal':{value:'legal research, documentation, compliance, risk management and professional judgement',lead:'legal accuracy and risk management'},
+  'Construction / Skilled Trades':{value:'quality workmanship, safety, technical skill, materials control and timely completion',lead:'quality, safety and dependable project delivery'},
+  'Other / General Professional':{value:'reliable performance, problem-solving, communication and delivery of role responsibilities',lead:'reliable performance and measurable contribution'}
+ };
+ const profile=profiles[$('reportCategory')?.value]||profiles['Other / General Professional'];
+ const scenarios=[.10,.15,.20,.25].map(p=>{const g=base*(1+p),r=result(g,0,mode,status,nm,false);return {p,g,r};});
+ const selected=scenarios.find(x=>Math.abs(x.p-uplift)<.0001)||scenarios[1];
+ const extra=selected.r.net-current.net;
+ const splitItems=(raw,fallback)=>{
+  const parts=String(raw||'').split(/\r?\n|;|\s*•\s*/).map(x=>x.trim()).filter(Boolean);
+  return parts.length?parts:[fallback];
+ };
+ const responsibilityItems=splitItems(responsibilitiesRaw,'Use the key responsibilities of the role as the starting point for your discussion.');
+ const evidenceItems=splitItems(evidenceRaw,'Use your relevant experience, skills, qualifications or measurable results as evidence of the value you can bring.');
+ const responsibilityHtml=responsibilityItems.map(x=>`<li>${escReport(x)}</li>`).join('');
+ const evidenceHtml=evidenceItems.map(x=>`<li>${escReport(x)}</li>`).join('');
+ const evidenceSentence=evidenceRaw?'I can point to evidence such as '+evidenceItems.slice(0,3).map(x=>escReport(x)).join('; ')+'.':'I can demonstrate this through my relevant experience, skills and results.';
+ let shortScript='';
+ if(situation==='new_job'){
+  shortScript='Thank you for the opportunity. I’m very interested in the '+job+' role. Based on the responsibilities of the position and my experience in '+profile.lead+', I believe I can make a strong contribution to the team. '+evidenceSentence+' I would therefore like to discuss a monthly gross salary of '+money(selected.g)+'. I’m also open to discussing the full package and responsibilities.';
+ } else if(situation==='current_raise'){
+  shortScript='I would like to request a review of my current salary in light of my responsibilities and contribution to the organisation. In my role as '+job+', I have been responsible for '+responsibilitiesRaw+'. '+evidenceSentence+' Considering the scope of my responsibilities, my experience and the value I continue to bring, I would like to discuss adjusting my monthly gross salary to '+money(selected.g)+'. I would appreciate the opportunity to discuss this with you.';
+ } else {
+  shortScript='I would like to discuss my salary in light of the expanded responsibilities I am handling in my role as '+job+'. My current responsibilities include '+responsibilitiesRaw+'. '+evidenceSentence+' Given the increased scope and expectations of the role, I would like to discuss an adjustment to my monthly gross salary to '+money(selected.g)+'. I’m open to discussing the responsibilities and the overall package.';
+ }
+ const html=`<div class="report-cover"><div class="report-cover-grid"><div class="report-cover-main"><div class="report-kicker">TakeHome Uganda · Salary Negotiation Report</div><h2>Your Salary Negotiation Plan</h2><p>A practical, personalized plan for approaching your next salary discussion with confidence.</p><div class="report-identity"><span class="report-pill"><strong>Role:</strong> ${job}</span><span class="report-pill"><strong>Field:</strong> ${category}</span><span class="report-pill"><strong>Situation:</strong> ${situationLabel}</span>${employer!=='Not specified'?`<span class="report-pill"><strong>Employer:</strong> ${employer}</span>`:''}</div></div><div class="report-cover-side"><div class="report-target-label">Your planning target</div><div class="report-target-value">${money(selected.g)}</div><div class="report-target-note">gross salary per month · ${Math.round(uplift*100)}% scenario</div></div></div></div>
+ <div class="report-section"><h3>1. Your current salary picture</h3><p class="report-section-intro">Your starting point before you negotiate.</p><div class="report-summary"><div class="report-stat"><span>Monthly gross / taxable income</span><strong class="report-stat-value">${money(base)}</strong></div><div class="report-stat"><span>Estimated PAYE</span><strong>${money(current.paye)}</strong></div><div class="report-stat"><span>Estimated employee NSSF</span><strong>${money(current.en)}</strong></div><div class="report-stat"><span>Estimated monthly take-home</span><strong class="report-stat-value">${money(current.net)}</strong></div><div class="report-stat"><span>Estimated annual gross</span><strong>${money(base*12)}</strong></div><div class="report-stat"><span>Estimated annual take-home</span><strong>${money(current.net*12)}</strong></div></div></div>
+ <div class="report-section"><h3>2. Your negotiation case</h3><p class="report-section-intro">This is where the report connects your role, evidence and professional value.</p><div class="report-case-intro">Your report is tailored to <strong>${category}</strong> and the role of <strong>${job}</strong>. Your strongest value theme is <strong>${profile.lead}</strong>.</div><div class="report-case-grid"><div class="report-case-card"><div class="report-card-label">Your responsibilities</div><ul class="report-card-list">${responsibilityHtml}</ul></div><div class="report-case-card"><div class="report-card-label">Your evidence</div><ul class="report-card-list">${evidenceHtml}</ul></div><div class="report-case-card full report-value-box"><div class="report-card-label">Value to emphasise</div><strong>${profile.value}</strong><p class="hint">Connect the employer’s needs to what you have already done or can reliably deliver.</p></div></div><div class="report-strength"><div class="report-strength-item"><span>Role clarity</span><strong>Defined</strong></div><div class="report-strength-item"><span>Responsibilities</span><strong>${responsibilitiesRaw?'Personalized':'General guidance'}</strong></div><div class="report-strength-item"><span>Evidence</span><strong>${evidenceRaw?'Personalized':'General guidance'}</strong></div><div class="report-strength-item"><span>Target</span><strong>${money(selected.g)}</strong></div></div></div>
+ <div class="report-section"><h3>3. Negotiation scenarios</h3><p class="report-section-intro">Use these scenarios to decide how ambitious you want your opening position to be.</p><table class="report-table"><thead><tr><th>Scenario</th><th>Gross / month</th><th>Est. take-home</th><th>Extra take-home</th></tr></thead><tbody>${scenarios.map(x=>`<tr><td>${Math.round(x.p*100)}% increase${x.p===uplift?' — <strong>selected</strong>':''}</td><td>${money(x.g)}</td><td>${money(x.r.net)}</td><td>${money(x.r.net-current.net)}</td></tr>`).join('')}</tbody></table><p class="hint">These are planning scenarios based on the salary entered, not independent market salary valuations.</p></div>
+ <div class="report-section"><h3>4. Your negotiation strategy</h3><p class="report-section-intro">A simple four-step structure matched to your negotiation situation.</p><div class="report-strategy"><div class="report-strategy-item"><span class="report-strategy-number">1</span><h4>Lead with the role</h4><p>${situation==='new_job'?'Start with the responsibilities and expectations of the position.':situation==='current_raise'?'Start with the responsibilities you currently carry and the contribution you have made.':'Start with the responsibilities you already handle and what has been added or expanded.'}</p></div><div class="report-strategy-item"><span class="report-strategy-number">2</span><h4>Show evidence</h4><p>Use your experience, skills, qualifications and results to show the contribution you make.</p></div><div class="report-strategy-item"><span class="report-strategy-number">3</span><h4>Explain your value</h4><p>For ${category}, connect your contribution to ${profile.value}.</p></div><div class="report-strategy-item"><span class="report-strategy-number">4</span><h4>State the target</h4><p>${situation==='new_job'?`Ask for ${money(selected.g)} gross/month and invite discussion of the complete package.`:situation==='current_raise'?`Request an adjustment toward ${money(selected.g)} gross/month and invite a constructive discussion.`:`Request an adjustment toward ${money(selected.g)} gross/month that reflects the expanded scope of the role.`}</p></div></div></div>
+ <div class="report-section"><h3>5. Ready-to-use negotiation message</h3><p class="report-section-intro">${situation==='new_job'?'Use this in an interview, email or conversation with a prospective employer.':situation==='current_raise'?'Use this when requesting a salary review with your current employer.':'Use this when discussing a promotion, expanded responsibilities or a change in role scope.'}</p><div class="negotiation-script">${escReport(shortScript)}</div><div class="report-script-note">Tip: say the target confidently, then pause and let the employer respond.</div></div>
+ <div class="report-section"><h3>6. ${situation==='new_job'?'If the employer says the budget is lower':situation==='current_raise'?'If your employer says the budget is limited':'If the employer cannot match the target'}</h3><div class="report-budget-grid">${situation==='new_job'?`<div class="report-budget-item"><strong>“Our budget is UGX X.”</strong><span>Ask whether there is flexibility based on your experience and the responsibilities of the role.</span></div><div class="report-budget-item"><strong>“That is above our range.”</strong><span>Ask whether the base, a relevant allowance, or a defined salary review can be improved.</span></div><div class="report-budget-item"><strong>“We can only offer X.”</strong><span>Clarify the complete package, probation, working hours, benefits and next review.</span></div>`:`<div class="report-budget-item"><strong>“There is no budget for an increase right now.”</strong><span>Ask when salaries are next reviewed and what specific results or responsibilities would support an adjustment.</span></div><div class="report-budget-item"><strong>“We cannot increase the salary at this time.”</strong><span>Ask whether there are other benefits, allowances, title changes or a documented review date that can be considered.</span></div><div class="report-budget-item"><strong>“Let’s discuss it later.”</strong><span>Ask for a clear review date and measurable expectations so the conversation leads to a defined next step.</span></div>`}</div><div class="negotiation-script">${situation==='new_job'?`“I understand the budget constraint. If the base salary cannot reach my target, could we discuss whether there is flexibility elsewhere in the package or agree on a formal salary review after I have demonstrated performance?”`:`“I understand the budget constraint. If an immediate adjustment is not possible, could we agree on what results or responsibilities would justify a salary review and set a specific date to revisit it?”`}</div></div>
+ <div class="report-section"><h3>7. What the target could mean for your pocket</h3><div class="report-pocket"><strong>Moving from ${money(base)} to ${money(selected.g)} gross/month</strong><p class="hint">Under the selected calculator assumptions, this is the estimated change in your take-home pay.</p><div class="report-pocket-grid"><div class="report-pocket-stat"><span>Gross increase</span><strong>${money(selected.g-base)} / month</strong></div><div class="report-pocket-stat"><span>Estimated extra take-home</span><strong>${money(extra)} / month</strong></div><div class="report-pocket-stat"><span>Estimated extra take-home</span><strong>${money(extra*12)} / year</strong></div></div></div></div>
+ <div class="report-footnote">Tax and NSSF figures are estimates based on the assumptions selected in TakeHome Uganda. This report is a salary-planning aid, not tax, legal, employment or market-value advice. Confirm the final package and applicable payroll treatment with the employer or a qualified adviser.</div>`;
+ $('reportContent').innerHTML=html;$('negotiationReport').hidden=false;$('negotiationBuilder').hidden=true;$('negotiationReport').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+let sandboxTxRef='';
+let sandboxPollTimer=null;
+function paymentBackendUrl(){
+  return String(window.THU_PAYMENT_CONFIG?.backendUrl || '').replace(/\/+$/,'');
+}
+function stopPaymentPolling(){if(sandboxPollTimer){clearInterval(sandboxPollTimer);sandboxPollTimer=null;}}
+function setPaymentError(message){
+  const el=$('paymentFormError'); if(el){el.textContent=message||'';el.hidden=!message;}
+}
+function unlockReportBuilder(){
+  stopPaymentPolling();
+  if($('testPayment'))$('testPayment').hidden=true;
+  if($('negotiationBuilder')){$('negotiationBuilder').hidden=false;$('negotiationBuilder').scrollIntoView({behavior:'smooth',block:'start'});}
+}
+async function checkSandboxPayment(){
+  if(!sandboxTxRef)return;
+  try{
+    const r=await fetch(paymentBackendUrl()+'/api/payment/status/'+encodeURIComponent(sandboxTxRef));
+    const body=await r.json();
+    if(body.paid){
+      stopPaymentPolling();
+      $('sandboxWaiting').hidden=true;
+      $('sandboxSuccess').hidden=false;
+      $('unlockAfterCheck').hidden=false;
+      $('sandboxStatus').textContent='Flutterwave has verified the UGX 5,000 test payment.';
+    }
+  }catch(e){/* keep polling; a temporary network error should not unlock the report */}
+}
+async function startSandboxPayment(){
+  setPaymentError('');
+  const backend=paymentBackendUrl();
+  const email=String($('paymentEmail')?.value||'').trim();
+  const phone=String($('paymentPhone')?.value||'').replace(/\s+/g,'').trim();
+  const network=String($('paymentNetwork')?.value||'MTN').toUpperCase();
+  const consent=$('paymentConsent')?.checked;
+  if(!backend){setPaymentError('Sandbox backend is not connected yet. Add your deployed payment-backend URL to payment-config.js.');return;}
+  if(!consent){setPaymentError('Please confirm that this is a Flutterwave Sandbox test.');return;}
+  if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){setPaymentError('Please enter a valid email address.');return;}
+  if(!phone || phone.replace(/\D/g,'').length<9){setPaymentError('Please enter the mobile-money phone number used for the sandbox test.');return;}
+  $('continuePayment').disabled=true;
+  $('continuePayment').textContent='Starting…';
+  try{
+    const r=await fetch(backend+'/api/payment/create',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:String($('reportName')?.value||'').trim(),phone_number:phone,network})});
+    const body=await r.json();
+    if(!r.ok || !body.ok)throw new Error(body.error||'Unable to start the sandbox payment.');
+    sandboxTxRef=body.txRef;
+    $('paymentStep').hidden=true;
+    $('testPayment').hidden=false;
+    $('testPayment').scrollIntoView({behavior:'smooth',block:'start'});
+    $('sandboxError').hidden=true;
+    $('sandboxSuccess').hidden=true;
+    $('unlockAfterCheck').hidden=true;
+    $('sandboxWaiting').hidden=false;
+    $('sandboxStatus').textContent='Payment request created. Complete the Flutterwave Sandbox step if prompted.';
+    if(body.redirectUrl){
+      $('sandboxRedirect').href=body.redirectUrl;
+      $('sandboxRedirect').hidden=false;
+      try{window.open(body.redirectUrl,'_blank','noopener');}catch(_e){}
+    }else{
+      $('sandboxRedirect').hidden=true;
+    }
+    stopPaymentPolling();
+    checkSandboxPayment();
+    sandboxPollTimer=setInterval(checkSandboxPayment,4000);
+  }catch(e){
+    setPaymentError(e.message||'Unable to start the sandbox payment.');
+  }finally{
+    $('continuePayment').disabled=false;
+    $('continuePayment').textContent='Start Sandbox Payment';
+  }
+}
+
+$('generateReport')?.addEventListener('click',generateNegotiationReport);
+$('editReport')?.addEventListener('click',()=>{if($('negotiationBuilder')){$('negotiationBuilder').hidden=false;$('negotiationBuilder').scrollIntoView({behavior:'smooth',block:'start'});}});
+$('printReport')?.addEventListener('click',()=>window.print());
+document.addEventListener('DOMContentLoaded',()=>{
+ $('calculate')?.addEventListener('click',calculate);$('oldNewCalculate')?.addEventListener('click',oldNew);$('impactCalculate')?.addEventListener('click',impact);$('reverseCalculate')?.addEventListener('click',reverse);$('compareOffers')?.addEventListener('click',offers);
+ document.querySelectorAll('.quick button').forEach(b=>b.addEventListener('click',()=>{if($('salary')){$('salary').value=Number(b.dataset.value).toLocaleString('en-UG');calculate()}}));
+ $('detailsBtn')?.addEventListener('click',()=>{$('details').hidden=!$('details').hidden;$('detailsBtn').textContent=$('details').hidden?'Show calculation':'Hide calculation'});
+ $('premiumCta')?.addEventListener('click',()=>{if($('premiumOffer'))$('premiumOffer').hidden=true;if($('paymentStep')){$('paymentStep').hidden=false;$('paymentStep').scrollIntoView({behavior:'smooth',block:'start'});}});
+ $('paymentConsent')?.addEventListener('change',e=>{if($('continuePayment'))$('continuePayment').disabled=!e.target.checked;});
+ $('backToOffer')?.addEventListener('click',()=>{if($('paymentStep'))$('paymentStep').hidden=true;if($('premiumOffer')){$('premiumOffer').hidden=false;$('premiumOffer').scrollIntoView({behavior:'smooth',block:'start'});}});
+ $('continuePayment')?.addEventListener('click',startSandboxPayment);
+ $('backToPayment')?.addEventListener('click',()=>{stopPaymentPolling();if($('testPayment'))$('testPayment').hidden=true;if($('paymentStep')){$('paymentStep').hidden=false;$('paymentStep').scrollIntoView({behavior:'smooth',block:'start'});}});
+ $('unlockAfterCheck')?.addEventListener('click',unlockReportBuilder);
+ fmtInputs();calculate();oldNew();impact();reverse();offers();setupToolNavigation();applySalaryFromUrl();
+});
+})();
+
+</script>
+
+<script>
+(function(){
+  const tabs = document.querySelectorAll('.tool-tab');
+  const panels = document.querySelectorAll('.tool-panel');
+  function showTool(name){
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.tool === name));
+    panels.forEach(p => p.classList.toggle('active', p.id === 'tool-' + name));
+    const panel = document.getElementById('tool-' + name);
+    if(panel) panel.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  tabs.forEach(t => t.addEventListener('click', () => showTool(t.dataset.tool)));
+  document.querySelectorAll('.topnav a').forEach(a => a.addEventListener('click', function(e){
+    const href=this.getAttribute('href')||'';
+    if(href==='#calculator') { e.preventDefault(); showTool('calculator'); }
+    else if(href==='#tax-impact') { e.preventDefault(); showTool('tax-impact'); }
+    else if(href==='#reverse') { e.preventDefault(); showTool('reverse'); }
+    else if(href==='#compare') { e.preventDefault(); showTool('compare'); }
+  }));
+})();
+</script>
+
+<script>
+(function(){
+  function openSalaryShortcut(value){
+    var input=document.getElementById('salary');
+    if(!input) return;
+    input.value=Number(value).toLocaleString('en-UG');
+    var calcBtn=document.getElementById('calculate');
+    if(calcBtn) calcBtn.click();
+    document.querySelectorAll('.tool-tab').forEach(function(t){t.classList.toggle('active',t.dataset.tool==='calculator'); t.setAttribute('aria-selected',t.dataset.tool==='calculator'?'true':'false');});
+    document.querySelectorAll('.tool-panel').forEach(function(p){p.classList.toggle('active',p.id==='tool-calculator');});
+    var panel=document.getElementById('tool-calculator');
+    if(panel) panel.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.salary-shortcut').forEach(function(btn){btn.addEventListener('click',function(){openSalaryShortcut(btn.dataset.salary);});});
+  });
+})();
+</script>
+</body></html>
