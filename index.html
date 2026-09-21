@@ -628,8 +628,12 @@ async function startSandboxPayment(){
       $('sandboxRedirect').hidden=false;
       try{window.open(body.redirectUrl,'_blank','noopener');}catch(_e){}
     }else{
-      $('sandboxRedirect').hidden=true;
-    }
+  $('sandboxRedirect').hidden=true;
+  const note=body.data?.next_action?.payment_instruction?.note;
+  if(note){
+    $('sandboxStatus').textContent=note;
+  }
+}
     stopPaymentPolling();
     checkSandboxPayment();
     sandboxPollTimer=setInterval(checkSandboxPayment,4000);
