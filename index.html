@@ -167,7 +167,14 @@
 <div class="tool-panel active" id="tool-calculator">
 <section id="calculator">
 <section class="card">
-<label for="salary">Gross monthly salary</label>
+<label>What salary figure do you know?</label>
+<div class="choices salary-input-mode">
+<label><input type="radio" name="salaryInputMode" value="gross" checked> Gross salary</label>
+<label><input type="radio" name="salaryInputMode" value="net"> Net salary (take-home)</label>
+</div>
+<p id="salaryInputHint" class="hint"><strong>Gross salary:</strong> Your salary before PAYE, NSSF and other deductions.</p>
+
+<label for="salary" id="salaryLabel">Gross monthly salary</label>
 <div class="input-wrap"><span>UGX</span><input id="salary" inputmode="numeric" value="2,000,000"></div>
 
 <label>Tax schedule</label>
