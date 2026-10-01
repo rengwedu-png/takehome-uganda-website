@@ -476,12 +476,93 @@ function result(gross,other,mode,status,nssfMode,multi){
  return {taxable,paye,en,employer:nssfMode==='standard'?gross*.10:0,net};
 }
 function calculate(){
- const gross=num('salary'),other=num('taxableIncome'),mode=radio('taxMode')||'fy2026_27',status=radio('status')||'resident',nm=radio('nssfMode')||'standard',multi=$('multipleEmployers')?.checked;
+ const inputAmount=num('salary'),
+       other=num('taxableIncome'),
+       mode=radio('taxMode')||'fy2026_27',
+       status=radio('status')||'resident',
+       nm=radio('nssfMode')||'standard',
+       multi=$('multipleEmployers')?.checked,
+       inputMode=radio('salaryInputMode')||'gross';
+
+ let gross=inputAmount;
+
+ if(inputMode==='net'){
+   const targetNet=inputAmount;
+   let lo=0;
+   let hi=Math.max(targetNet*3,1000000);
+
+   // Expand the upper limit if necessary.
+   while(result(hi,other,mode,status,nm,multi).net<targetNet){
+     hi*=2;
+     if(hi>1000000000) break;
+   }
+
+   // Find the gross salary that produces the requested net.
+   for(let i=0;i<80;i++){
+     const mid=(lo+hi)/2;
+     const r=result(mid,other,mode,status,nm,multi);
+
+     if(r.net<targetNet){
+       lo=mid;
+     }else{
+       hi=mid;
+     }
+   }
+
+   gross=hi;
+ }
+
  const r=result(gross,other,mode,status,nm,multi);
- set('takehome',money(r.net));set('gross',money(r.taxable));set('paye',money(r.paye));set('employeeNssf',money(r.en));set('employerNssf',money(r.employer));set('annualTakehome',money(r.net*12));set('nssfStatus',nm==='standard'?'Standard':nm==='nonresident'?'Non-resident special':nm==='none'?'No employee deduction':'Confirm eligibility');
- if($('details')){$('details').textContent='Gross monthly salary: '+money(gross)+'\nOther taxable employment income: '+money(other)+'\nPAYE: '+money(r.paye)+'\nEmployee NSSF: '+money(r.en)+'\nEstimated take-home: '+money(r.net);}
+
+ set('takehome',money(r.net));
+ set('gross',money(r.taxable));
+ set('paye',money(r.paye));
+ set('employeeNssf',money(r.en));
+ set('employerNssf',money(r.employer));
+ set('annualTakehome',money(r.net*12));
+ set('nssfStatus',
+   nm==='standard'
+     ? 'Standard'
+     : nm==='nonresident'
+       ? 'Non-resident special'
+       : nm==='none'
+         ? 'No employee deduction'
+         : 'Confirm eligibility'
+ );
+
+ if($('details')){
+   $('details').textContent=
+     'Salary figure entered: '+money(inputAmount)+
+     '\nInput type: '+(inputMode==='net'?'Net salary (take-home)':'Gross salary')+
+     '\nCalculated gross monthly salary: '+money(gross)+
+     '\nOther taxable employment income: '+money(other)+
+     '\nPAYE: '+money(r.paye)+
+     '\nEmployee NSSF: '+money(r.en)+
+     '\nEstimated take-home: '+money(r.net);
+ }
+
  if($('premiumOffer'))$('premiumOffer').hidden=false;
 }
+function updateSalaryInputMode(){
+ const inputMode=radio('salaryInputMode')||'gross';
+ const label=$('salaryLabel');
+ const hint=$('salaryInputHint');
+ const input=$('salary');
+
+ if(inputMode==='net'){
+   if(label)label.textContent='Net monthly salary (take-home)';
+   if(hint)hint.innerHTML='<strong>Net salary:</strong> The amount you receive after PAYE, NSSF and other deductions.';
+   if(input)input.setAttribute('aria-label','Net monthly salary');
+ }else{
+   if(label)label.textContent='Gross monthly salary';
+   if(hint)hint.innerHTML='<strong>Gross salary:</strong> Your salary before PAYE, NSSF and other deductions.';
+   if(input)input.setAttribute('aria-label','Gross monthly salary');
+ }
+}
+document.querySelectorAll('input[name="salaryInputMode"]').forEach(r=>{
+ r.addEventListener('change',updateSalaryInputMode);
+});
+updateSalaryInputMode();
 function oldNew(){const g=num('oldNewSalary'),nm=radio('oldNewNssf')||'standard',en=nm==='standard'?g*.05:0;const oldp=T.paye(g,'publishedUra','resident',false),newp=T.paye(g,'fy2026_27','resident',false);set('oldNewOldPaye',money(oldp));set('oldNewNewPaye',money(newp));set('oldNewOldNet',money(g-oldp-en));set('oldNewNewNet',money(g-newp-en));set('oldNewDifference',money(oldp-newp));}
 function impact(){const g=num('impactSalary'),oldp=T.paye(g,'publishedUra','resident',false),newp=T.paye(g,'fy2026_27','resident',false),d=oldp-newp;set('impactOldPaye',money(oldp));set('impactNewPaye',money(newp));set('impactMonthly',money(d));set('impactAnnual',money(d*12));set('impactNet',money(g-newp-g*.05));set('impactMessage',d>=0?'Estimated PAYE is lower under the FY2026/27 model by '+money(d)+' per month.':'Estimated PAYE is higher under the FY2026/27 model by '+money(-d)+' per month.');}
 function reverse(){const target=num('targetNet'),nm=radio('nssfMode')||'standard',mode=radio('taxMode')||'fy2026_27',status=radio('status')||'resident';let lo=0,hi=Math.max(target*3,1000000);for(let i=0;i<80;i++){let mid=(lo+hi)/2,r=result(mid,0,mode,status,nm,false);if(r.net<target)lo=mid;else hi=mid;}const g=hi,r=result(g,0,mode,status,nm,false);set('requiredGross',money(g));set('reverseNet',money(r.net));set('reversePaye',money(r.paye));set('reverseNssf',money(r.en));set('reverseDiff',money(r.net-target));if($('reverseNote'))$('reverseNote').textContent='Estimated gross salary needed to reach the target net under the selected assumptions.'}
